@@ -21,7 +21,7 @@ config = {
                     pass: '8917b87a55ba6d45283d5ee83ea38cae'
                 }
             }
-        }
+        },
         database: {
             client: 'sqlite3',
             connection: {
