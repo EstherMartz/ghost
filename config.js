@@ -12,7 +12,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://esthermartz.com',
-        mail: {},
+        mail: {
+        transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@esthermartz.com',
+                    pass: '8917b87a55ba6d45283d5ee83ea38cae'
+                }
+            }
+        }
         database: {
             client: 'sqlite3',
             connection: {
